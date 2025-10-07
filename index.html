@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blub on off button</title>
+    <link rel="stylesheet" href="blubonoff.css">
+    
+    
+</head>
+<body>
+    <img src="https://www.w3schools.com/js/pic_bulboff.gif" style="align-items: center;" id="blub"> 
+
+   
+
+    <button id="on"  src='pic_bulbon.gif'> turn on bulb</button>
+
+
+
+    <button id="of" onclick="off()"> turn off blub</button>
+
+    <script>
+        
+        let blub=document.getElementById("blub");
+       let onblub=document.createElement("img")
+      
+
+        let turnon=document.getElementById("on");
+
+        // let turnoff=document.getElementById("off");
+        
+
+    //    function blub(){
+    //     if()
+    //    }
+
+    turnon.addEventListener('click',()=>{
+            console.log(turnon)
+            setTimeout(()=>
+        { 
+            blub.src="https://www.w3schools.com/js/pic_bulbon.gif"
+           
+        },2000)
+           
+          })
+
+        //   turnoff.addEventListener('click',()=>{
+        //     console.log(turnoff)
+        //     blub.src="https://www.w3schools.com/js/pic_bulboff.gif"
+        //   })
+  function off(){
+    blub.src="https://www.w3schools.com/js/pic_bulboff.gif"
+  }
+          
+        //   turnon.addEventListener('click',()=>{
+        //     console.log(turnon)
+        //     blub.
+        //   })
+
+
+        
+        // blub.addEventListener('click',()=>{
+        //     console.log(turnon)
+        //     blub.style="background-color:yellow"
+        // })
+
+            </script>
+</body>
+</html>
